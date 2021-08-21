@@ -1,4 +1,7 @@
 import { add, add2 } from './add';
+//unitesting
+//x: skips over test
+//xdescribe
 
 xdescribe(add.name, () => {
     it('test 1', () => {
@@ -20,6 +23,8 @@ xdescribe(add.name, () => {
 
 xdescribe(add2.name, () => {
     // console.log(add2(2,3));
+
+    //f: focus on a test> fit
     it('test 1', () => {
         // arrange
         const data = [1, 2, 3, 4, 5];

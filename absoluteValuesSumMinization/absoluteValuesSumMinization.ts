@@ -1,5 +1,7 @@
 export function absoluteValuesSumMinimization(a: number[]): number {
-    return 5;
+    let middleArr= 0;
+    middleArr= Math.floor((a.length- 1)/2);
+    return a[middleArr];
 }
 
 // console.log(absoluteValuesSumMinimization([2, 4, 7]));
