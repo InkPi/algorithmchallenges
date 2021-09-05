@@ -1,11 +1,6 @@
 export function alphabeticShift(inputString: string): string {
     let newArr= [];
 
-    // turnArr.forEach(element => {
-    //     nums= element.charCodeAt(0);
-    //     console.log(alphabeticShift(nums));
-    // });
-
     for(let i=0; i< inputString.length; i++) {
         newArr.push(String.fromCharCode(inputString.charCodeAt(i)+1));
     }

@@ -1,5 +1,15 @@
 export function alphabetSubsequence(s: string): boolean {
+    var sortedAlphas;
+    let alphaSet;
 
+    sortedAlphas= s.split('').sort();
+
+    alphaSet= [...new Set(sortedAlphas)].join('').toString();
+
+    if(s === alphaSet) {
+        return true;
+    }
+    return false;
 }
 
 console.log(alphabetSubsequence('zab'))
