@@ -2,7 +2,7 @@ export function alphabetSubsequence(s: string): boolean {
     var sortedAlphas;
     let alphaSet;
 
-    sortedAlphas= s;
+    sortedAlphas= s; //to avoid mutation- s.split ...
     
     sortedAlphas= sortedAlphas.split('').sort();
 
